@@ -1,20 +1,33 @@
+################################################################################
+################################################################################
+################################################################################
+# Author: Sean Tronsen
+# Date: 11172023
+#
+# COMPILE DOCUMENTS WHEN A NEW SEMANTIC VERSIONS IS AVAILABLE
+################################################################################
+################################################################################
+################################################################################
 name: compile-document
 on:
   push:
     tags:
       - "v*.*.*"
+env:
+  BUILD_SOURCES: resume.tex
+  BUILD_TARGETS: resume.pdf
 jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
       - run: env
-      - name: Set up Git repository
+      - name: grab repository files
         uses: actions/checkout@v4
-      - name: Compile LaTeX document
+      - name: Compile LaTeX sources
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume.tex
-      - name: Release New PDF
+          root_file: ${{ env.BUILD_SOURCES }}
+      - name: Release PDFs
         uses: softprops/action-gh-release@v1
         with:
-          files: "*.pdf"
+          files: ${{ env.BUILD_TARGETS }}

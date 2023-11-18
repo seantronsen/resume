@@ -1,8 +1,6 @@
 SHELL ::= /bin/bash
 OBJECTS = *.{out,pdf,log,fls,fdb*,aux,synctex*}
 
-
-
 .PHONY: all clean
 
 all: resume.pdf

@@ -1,7 +1,12 @@
-# Resume
-The files in this repository can be used to generate a PDF representation of my resume with the latex compiler of your choice. Personally, I used the free tools available at [Overleaf](https://www.overleaf.com/) for both editing and compiling the PDF's since they require little configuration. 
+# resume
 
-### Authors of the template used:
-- https://github.com/TimmyChan 
-- https://github.com/xiazeyu
-- https://github.com/iamgmujtaba
+Contained within this repository are a set of LaTeX source files which can be
+used to compile a PDF representation my current resume. Provided that LaTeX PDF
+compilation is not for everyone, the latest versions of the document can also
+be found under the releases section.
+
+> Important: Although the content of the resume is my own, neither the styling
+> nor the format are my creation. If you like the document layout, please visit
+> the
+> [repository](https://github.com/TimmyChan/data-science-tech-resume-template)
+> for the author of the template.
