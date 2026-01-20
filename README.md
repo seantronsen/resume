@@ -7,5 +7,5 @@ PDF of my resume. Pre-compiled PDFs can also be found under
 > [!important]
 >
 > Although the content of the resume is my own, the document format is derived
-> from the template available from this repository:
-> [repository](https://github.com/TimmyChan/data-science-tech-resume-template)
+> from the template in
+> [this repository](https://github.com/TimmyChan/data-science-tech-resume-template).
